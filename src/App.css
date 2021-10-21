@@ -40,6 +40,11 @@ body{
   justify-content: center;
   margin: 100px;
 }
+.container{
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
 .ice-cream{
   background-color: pink;
   min-height: 160px;
@@ -48,6 +53,11 @@ body{
   width: 30%;
   padding: 10px;
   border-radius:8px ;
+  transition: all 1s;
+}
+.ice-cream:hover{
+  transform: translateY(-5%);
+  box-shadow: -3px 4px 34px 10px rgba(92, 124, 148, 0.3);
 }
 .card-image{
   background-color: #61dafb;
@@ -80,4 +90,12 @@ small{
 }
 .info__piece,.info__price{
   font-weight: 700;
+}
+.links{
+  padding: 20px 20px 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.links__image{
+  object-fit: cover;
 }
